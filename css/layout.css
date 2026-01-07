@@ -7,6 +7,10 @@ header {
     box-shadow: 0 10px 10px -4px rgba(0,0,0,0.2);
 }
 
+body {
+    margin: 0px;
+}
+
 .logo img {
     width: 203px;
     height: 64px;
@@ -45,26 +49,119 @@ nav a:hover {
 .dropdown-menu {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     display: none;
+    list-style: none;
     flex-direction: column;
 }
 
 .dropdown-menu li a {
-    padding: 5px 5px;
+    padding: 10px 10px;
+    background-color: #fff;
     color: #333;
     display: block;
     text-align: left;
     white-space: nowrap;
 }
 
-
 .dropdown-menu li a:hover {
     color: #fff;
     background-color: #7CAD25;
+    transform: none;
 }
 
 .dropdown:hover .dropdown-menu {
     display: flex;
 }
+
+.video-bg {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.video-bg iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    transform: translate(-50%, -50%) scale(1.1);
+    pointer-events: none;
+}
+
+.video-bg .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80, 61, 33, 0.5);
+    pointer-events: none;
+}
+
+.video-bg .video-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+    font-family: 'Raleway', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-bg .video-text h1 {
+    font-size: 48px;
+    font-weight: 510;
+
+}
+
+.video-bg .video-text h2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.google-review-card {
+    display: flex;
+    align-items: center; 
+}
+
+.google-review-card img.review-logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    padding: 10px;
+}
+
+
+.google-review-card a {
+    display: inline-block;
+    position: relative;
+    z-index: 11;
+    color: #fff;
+    text-decoration: none;
+}
+
+.google-review-card .review-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+    
+
+
+
+
+
 
