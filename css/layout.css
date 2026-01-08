@@ -9,6 +9,9 @@ header {
 
 body {
     margin: 0px;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #FFE4E1, #FFFACD, #E0FFE0, #ADD8E6);
 }
 
 .logo img {
@@ -54,6 +57,7 @@ nav a:hover {
     display: none;
     list-style: none;
     flex-direction: column;
+    z-index: 12;
 }
 
 .dropdown-menu li a {
@@ -122,7 +126,6 @@ nav a:hover {
 .video-bg .video-text h1 {
     font-size: 48px;
     font-weight: 510;
-
 }
 
 .video-bg .video-text h2 {
@@ -132,36 +135,107 @@ nav a:hover {
 
 .google-review-card {
     display: flex;
-    align-items: center; 
+    align-items: flex-start; 
+    gap: 5px;
 }
 
 .google-review-card img.review-logo {
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     flex-shrink: 0;
-    padding: 10px;
+    padding: 5px;
 }
 
-
-.google-review-card a {
-    display: inline-block;
-    position: relative;
-    z-index: 11;
-    color: #fff;
-    text-decoration: none;
-}
-
-.google-review-card .review-content {
+.review-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
+    align-items: flex-start; 
+}
+
+.review-content a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.review-rating {
+    color: #FB8E28;
+    font-size: 21px;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.google-powered {
+    font-size: 16px;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.google {
+    display: inline-flex;
+    font-weight: 600;
+}
+
+.google-g { 
+    color:#6186EC;
+}
+.google-o1, .google-e {
+    color:#CD523F;
+}
+.google-o2 {
+    color: #EABE43;
+}
+.google-l { 
+    color: #63A45D;
+}
+
+.google-review {
+    width: 100%;          
+    text-align: left;   
+}
+
+.google-link {
+    display: inline-flex; 
+    padding: 8px 12px;
+    background-color: #1F67E7;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 12px;
+    font-size: 16px;
+    white-space: nowrap;  
+}
+
+.review-text {
+    display: inline;    
+    margin-right: 4px;     
+}
+
+.google-logo {
+    display: inline-block;  
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    border-radius: 50%;
+    vertical-align: middle; 
+}
+
+.call {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    gap: 35px;
+}
+
+.call-info {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    line-height: 1.2;
+}
+
+.phone-number {
+    font-weight: 700;
+    font-size: 24px;
 }
     
-
-
-
-
-
-
