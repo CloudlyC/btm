@@ -123,14 +123,20 @@ nav a:hover {
     justify-content: center;
 }
 
+.video-text {
+    max-width: 680px;
+}
+
 .video-bg .video-text h1 {
-    font-size: 48px;
-    font-weight: 510;
+    font-size: 60px;
+    font-weight: 500;
+    margin: 0px;
 }
 
 .video-bg .video-text h2 {
     font-size: 24px;
     font-weight: 400;
+    padding-bottom: 20px;
 }
 
 .google-review-card {
@@ -224,7 +230,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     padding: 40px;
-    gap: 35px;
+    gap: 100px;
 }
 
 .call-info {
@@ -238,4 +244,91 @@ nav a:hover {
     font-weight: 700;
     font-size: 24px;
 }
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 60px;
+    gap: 80px;
+}
+
+.intro-text {
+    max-width: 600px;
+}
+
+.intro-text h2 {
+    color: #192A3D;
+    font-size: 45px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    
+}
+
+.dropcap::first-letter {
+    font-size: 45px;
+    float: left;
+    line-height: 1;
+    margin-right: 8px;
+
+}
+
+.intro-text p {
+    color: #3A4F66;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+.intro-images {
+    position: relative;
+    width: fit-content;
+}
+
+.intro-head-image {
+    display: block;
+    height: auto;
+    border-radius: 200px 50px 50px 50px;
+}
+
+.intro-neck-image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 2;
+    border-radius: 15px;
+}
+
+.intro-text-sub {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.intro-text-content h3, .intro-text-content p {
+    margin: 0;
+    padding: 0;
+}
+
+.intro-text-content h3 {
+    color: #47690A;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+.intro-text-content p {
+    color: #3A4F66;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.intro-icon {
+    margin-right: 40px;
+}
+
+
     
