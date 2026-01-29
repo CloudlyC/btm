@@ -1,28 +1,18 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const carousel = document.querySelector('.cards');
-    const nextBtn = document.querySelector('.carousel .next');
-    const prevBtn = document.querySelector('.carousel .prev');
+const track = document.querySelector('.cards');
+const nextBtn = document.querySelector('.nav.next');
+const prevBtn = document.querySelector('.nav.prev');
 
-    if (!carousel || !nextBtn || !prevBtn) return;
+const card = document.querySelector('.card');
+const style = window.getComputedStyle(card);
+const cardWidth = card.offsetWidth + parseInt(style.marginRight);
 
-    function getCardWidth() {
-        const card = carousel.querySelector('.card');
-        const style = getComputedStyle(card);
-        const gap = 20; 
-        return card.offsetWidth + gap;
-    }
-
-    nextBtn.addEventListener('click', () => {
-        carousel.scrollLeft += getCardWidth(); 
-    });
-
-    prevBtn.addEventListener('click', () => {
-        carousel.scrollLeft -= getCardWidth(); 
-    });
+// Next button scrolls right
+nextBtn.addEventListener('click', () => {
+  track.scrollBy({ left: cardWidth, behavior: 'smooth' });
 });
 
-
-
-
-
+// Prev button scrolls left
+prevBtn.addEventListener('click', () => {
+  track.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+});
 

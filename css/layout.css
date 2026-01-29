@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -330,7 +338,7 @@ nav a:hover {
     margin-right: 40px;
 }
 
-.intro-link {
+.intro-link, .specialty-link {
     display: inline-flex; 
     padding: 15px 50px;
     background-color: #7CAD25;
@@ -383,7 +391,7 @@ nav a:hover {
     font-size: 45px;
     font-weight: 300;
     text-align: center;
-    margin: 20px auto 0 auto;
+    margin: 50px auto 0 auto;
     max-width: 1000px;
 }
 
@@ -391,7 +399,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 300px;
+    gap: 240px;
 }
 
 .static-massage-image {
@@ -410,9 +418,9 @@ nav a:hover {
 
 .carousel {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
-    gap: 15px;
 }
 
 .cards {
@@ -420,7 +428,7 @@ nav a:hover {
     gap: 20px;
     overflow-x: hidden;      
     scroll-behavior: smooth;   
-    max-width: 750px;          
+    max-width: 750px;         
 }
 
 .cards::-webkit-scrollbar {
@@ -429,16 +437,16 @@ nav a:hover {
 
 .card {
     background: #fff;
-    width: 375px;
+    width: 450px;
     height: 450px;
     border-radius: 12px; 
 }
 
 .card img {
-    width: 350px;
+    width: 375px;
     height: auto;
     display: block;
-    margin: 10px auto 10px auto;
+    padding: 10px;
 }
 
 .card li a {
@@ -470,6 +478,8 @@ nav a:hover {
 }
 
 .nav {
+    position: absolute; 
+    top: 50%; 
     background: #7CAD25;
     border: none;
     color: #fff;
@@ -478,7 +488,22 @@ nav a:hover {
     width: 50px;
     height: 50px;
     cursor: pointer;
+    z-index: 1;
 }
 
+.nav.prev {
+    left: 0px;   
+}
+
+.nav.next {
+    right: 0px; 
+}
+
+.carousel-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
 
     
