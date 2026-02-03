@@ -689,12 +689,11 @@ nav a:hover {
     margin: 0 auto;
 }
 
-
 .review-prev, .review-next {
     flex-shrink: 0;
     width: 44px;
     height: 44px;
-    border: none;        
+    border: none;       
     background: transparent; 
     font-size: 28px;
     color: #222222;       
