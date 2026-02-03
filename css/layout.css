@@ -237,7 +237,7 @@ nav a:hover {
 .call {
     display: flex;
     align-items: center;
-    padding: 40px;
+    padding: 40px 40px 0 40px;
     gap: 100px;
 }
 
@@ -570,6 +570,7 @@ nav a:hover {
     max-width: 1250px;
     overflow: hidden;
     margin: 0 auto;
+    border-radius: 12px;
 }
 
 .panel {
@@ -626,13 +627,12 @@ nav a:hover {
 }
 
 .review-card {
-    flex: 0 0 280px;       
+    flex: 0 0 225px;      
     border-radius: 14px;
     padding: 18px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.08);
     font-size: 14px;
     line-height: 1.5;
-    width: 250px;
     height: 225px;
     background-color: #fff;
 
@@ -657,7 +657,7 @@ nav a:hover {
 
 .google-review-card2 a {
     color: #192A3D;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
 
@@ -665,14 +665,14 @@ nav a:hover {
     color: #555555;
     margin-top: 5px;
     margin-bottom: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
 
 .google-review-card2 .google-powered {
     color: #777777;
     margin-top: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
 
@@ -681,5 +681,92 @@ nav a:hover {
     font-weight: 500;
 }
 
+.reviews-scroll {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 
+.review-prev, .review-next {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border: none;        
+    background: transparent; 
+    font-size: 28px;
+    color: #222222;       
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-card {
+    position: relative;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.review-card p {
+    margin: 0px;
+}
+
+.review-google-logo {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 24px;
+    height: auto;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar img { 
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.review-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.review-name {
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    color: #154FC1;
+}
+
+.review-date {
+    color: #555555;
+    font-size: 13px;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.star-rating {
+    color: #FB8E28;
+    font-size: 21px;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.review-scroll-box {
+    height: 100px;
+    overflow-y: auto;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #222222;
+    scrollbar-width: thin;
+}
