@@ -1,0 +1,40 @@
+/* Reset / Global Rules */ 
+
+* {
+    box-sizing: border-box;
+}
+
+html, body { 
+    width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #FFE4E1, #FFFACD, #E0FFE0, #ADD8E6);
+}
+
+/* Typography defaults */
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+.google-g { color:#6186EC; }
+.google-o1, .google-e { color:#CD523F; }
+.google-o2 { color: #EABE43; }
+.google-l { color: #63A45D; }

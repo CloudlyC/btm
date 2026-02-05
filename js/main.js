@@ -6,7 +6,6 @@ const card = document.querySelector('.card');
 const style = window.getComputedStyle(card);
 const cardWidth = card.offsetWidth + parseInt(style.marginRight);
 
-
 const reviewsTrack = document.querySelector('.reviews-scroll');
 const reviewsNext = document.querySelector('.review-next');
 const reviewsPrev = document.querySelector('.review-prev');
