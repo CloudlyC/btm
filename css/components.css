@@ -59,6 +59,26 @@ nav a:hover {
     display: flex;
 }
 
+/* Tab UI */ 
+
+.massage-tabs .tab {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: 1px solid #fafbfc;
+  border-bottom: 3px solid transparent;
+  border-radius: 8px 8px 0 0; 
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.massage-tabs .tab.active {
+    border-bottom: 3px solid #000000;
+}
+
 /* Video UI */ 
 
 .video-bg .video-text {
@@ -670,10 +690,83 @@ nav a:hover {
     text-decoration: none;
 }
 
+.footer-col2 {
+    padding-left: 125px;
+}
+
+.footer-col3 {
+    padding-left: 75px;
+}
+
+.footer-col4 {
+    padding-left: 50px;
+}
 .footer-col2 a, .footer-col3 a {
     display: block;
 }
 
 .footer-col2 a:hover, .footer-col3 a:hover {
     background-color: #7CAD25;
+}
+
+.footer-col4 a, .footer-col4 p{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fafbfc;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    text-align: center;
+}
+
+.map-icon, .phone-icon, .mail-icon {
+    width: 18px;
+    height: 18px;
+    fill: #fafbfc;
+}
+
+.get-directions, .call-us-number, .email {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #fafbfc;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.service-info h2 {
+    margin: 0;
+}
+
+/* Service UI */
+
+.service-info h2 {
+    text-align: center;
+    padding-top: 50px;
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    color: #192A3D;
+    font-weight: 300;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 750px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.text-container {
+    flex: 1;
+}
+
+.text-container p {
+    font-family: "Montserrrat", sans-serif;
+    font-size: 16px;
+    color: #3A4F66;
+
 }
