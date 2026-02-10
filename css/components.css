@@ -219,6 +219,10 @@ nav a:hover {
     
 }
 
+.dropcap {
+    margin-top: 10px;
+}
+
 .dropcap::first-letter {
     font-size: 45px;
     float: left;
@@ -254,7 +258,8 @@ nav a:hover {
 .intro-text-sub {
     display: flex;
     align-items: center;
-    padding-bottom: 15px;
+    margin-top: 10px;
+    padding-bottom: 10px;
 }
 
 .intro-text-content h3 {
@@ -751,6 +756,7 @@ nav a:hover {
     font-size: 40px;
     color: #192A3D;
     font-weight: 300;
+    padding-top: 75px;
 }
 
 .image-container img {
@@ -764,9 +770,15 @@ nav a:hover {
     flex: 1;
 }
 
-.text-container p {
-    font-family: "Montserrrat", sans-serif;
-    font-size: 16px;
-    color: #3A4F66;
+.text-container h5, .description {
+    padding-bottom: 15px;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    color: #192A3D;
+    font-weight: 300;
+}
 
+.description {
+    padding-left: 113px;
+    text-indent: -113px;
 }
