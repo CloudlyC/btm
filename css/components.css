@@ -425,9 +425,11 @@ nav a:hover {
     padding: 15px 50px;
 }
 
-/* Gallery/ Testimonials UI */ 
+/* Gallery/ Testimonials / About Us (Carousel) UI */ 
 
-.gallery-header::before, .gallery-header::after, .testimonials-header::before, .testimonials-header::after {
+.gallery-header::before, .gallery-header::after,
+.testimonials-header::before, .testimonials-header::after
+.aboutus-services-header::before, .aboutus-services-header::after {
     content: "";
     width: 50px;
     height: 1px;
@@ -782,3 +784,90 @@ nav a:hover {
     padding-left: 113px;
     text-indent: -113px;
 }
+
+/* Tab UI */
+
+.tab {
+    position: relative;
+    text-decoration: none;         
+}
+
+.tab.active {
+    color: #7CAD25;        
+    border-bottom: 3px solid #7CAD25;
+}
+
+/* About Us UI */
+.image-bg-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fafbfc;
+}
+
+.image-bg-text-header::before, .image-bg-text-header::after {
+    content: "";
+    width: 75px;
+    height: 1px;
+    background-color: #fafbfc;
+}
+
+.image-bg-text h5 {
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+}
+
+.image-bg-text h2 {
+    font-size: 50px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+}
+
+.image-bg-text p {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+/* Welcome UI */
+
+.welcome-store-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 25px;
+}
+
+.story-image img {
+    width: 575px;
+    height: 650px;
+    display: block;
+    border-radius: 25px;
+}
+
+.welcome-text h2, .story-text h2 {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 200;
+    font-family: "Raleway", sans-serif;
+    color: #192A3D;
+}
+
+.welcome-text p, .story-text p {
+    margin: 0;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color:#192A3D;
+    line-height: 1.5;
+}
+
+.store-images-row img {
+    width: 275px;
+    height: 400px;
+    display: block;
+    border-radius: 8px;
+}
+
